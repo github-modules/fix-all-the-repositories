@@ -1,0 +1,23 @@
+{
+  "name": "fix-all-the-repositories",
+  "version": "1.0.0",
+  "description": "Automatically open pull requests to fix repos that have an ugly repository value in their package.json file",
+  "main": "index.js",
+  "author": "zeke",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "get-repo-package-json": "^2.0.0",
+    "github-url-to-object": "^4.0.4"
+  },
+  "devDependencies": {
+    "@octokit/rest": "^15.8.1",
+    "bottleneck": "^2.3.1",
+    "dotenv-safe": "^5.0.1",
+    "jest": "^23.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "debug": "DEBUG=octokit:rest* jest"
+  }
+}
